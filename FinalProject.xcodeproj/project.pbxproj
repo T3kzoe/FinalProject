@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C8AB562A3843A400B45FDA /* signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C8AB552A3843A400B45FDA /* signin.swift */; };
+		09A779AF2A382E8A006D660D /* iAmFeeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A779AE2A382E8A006D660D /* iAmFeeling.swift */; };
 		BDE6569F2A37758100CE8377 /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6569E2A37758100CE8377 /* FinalProjectApp.swift */; };
 		BDE656A12A37758100CE8377 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE656A02A37758100CE8377 /* ContentView.swift */; };
 		BDE656A32A37758200CE8377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE656A22A37758200CE8377 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03C8AB552A3843A400B45FDA /* signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signin.swift; sourceTree = "<group>"; };
+		09A779AE2A382E8A006D660D /* iAmFeeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAmFeeling.swift; sourceTree = "<group>"; };
 		BDE6569B2A37758100CE8377 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE6569E2A37758100CE8377 /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
 		BDE656A02A37758100CE8377 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				BDE6569E2A37758100CE8377 /* FinalProjectApp.swift */,
+				03C8AB552A3843A400B45FDA /* signin.swift */,
 				BDE656A02A37758100CE8377 /* ContentView.swift */,
+				09A779AE2A382E8A006D660D /* iAmFeeling.swift */,
 				BDE656A22A37758200CE8377 /* Assets.xcassets */,
 				BDE656A42A37758200CE8377 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				BDE656A12A37758100CE8377 /* ContentView.swift in Sources */,
 				BDE6569F2A37758100CE8377 /* FinalProjectApp.swift in Sources */,
+				09A779AF2A382E8A006D660D /* iAmFeeling.swift in Sources */,
+				03C8AB562A3843A400B45FDA /* signin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
