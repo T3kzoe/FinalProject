@@ -121,6 +121,6 @@ struct iAmFeeling: View {
 
 struct iAmFeeling_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        iAmFeeling()
     }
 }

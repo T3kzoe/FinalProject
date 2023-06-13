@@ -13,10 +13,12 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Text("Nice to see you 'name'")
-                padding()
-                padding()
+                    .foregroundColor(Color(red: 0.62, green: 0.0, blue: 0.0))
+                    .padding()
+                    .padding()
                 NavigationLink(destination:/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                     Text("Fun Mode")
+                    
                 }
                 NavigationLink(destination:/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                     Text("Rest Mode")
@@ -25,15 +27,13 @@ struct ContentView: View {
                     Text("Work Mode")
                 }
                 
-                
-            }
-        }
-        
-        struct ContentView_Previews: PreviewProvider {
-            static var previews: some View {
-                ContentView()
             }
         }
     }
 }
 
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

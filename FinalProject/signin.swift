@@ -16,6 +16,7 @@ struct signin: View {
         ZStack {
             Image("landscape")
                 .resizable()
+                .ignoresSafeArea()
             VStack {
                 Text("Welcome to")
                     .font(.custom("Caveat-VariableFont_wght", size: 60))
@@ -27,9 +28,11 @@ struct signin: View {
                     }
                 TextField("What's your name?", text: $name)
                     .font(.title)
-                    .border(Color.blue)
+                    .border(Color(red: 0.62, green: 0.0, blue: 0.0))
                     .padding()
                     .multilineTextAlignment(.center)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+    
                 
                 HStack {
                     Button(action: {
