@@ -16,14 +16,14 @@ struct ContentView: View {
                     .foregroundColor(Color(red: 0.62, green: 0.0, blue: 0.0))
                     .padding()
                     .padding()
-                NavigationLink(destination:/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                NavigationLink(destination:signin()) {
                     Text("Fun Mode")
                     
                 }
                 NavigationLink(destination:/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                     Text("Rest Mode")
                 }
-                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                NavigationLink(destination: iAmFeeling()) {
                     Text("Work Mode")
                 }
                 
