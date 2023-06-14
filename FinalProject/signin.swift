@@ -45,10 +45,14 @@ struct signin: View {
                     VStack{
                         TextField("What's your name?", text: $name)
                             .font(.title)
-                            .border(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
-                            .padding()
+                            
                             .multilineTextAlignment(.center)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .fontWeight(.semibold)
+                            .padding(7)
+                            .overlay( /// apply a rounded border
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(Color(hue: 0.639, saturation: 0.969, brightness: 0.303), lineWidth: 2).padding(.horizontal)
+                            )
                         
                         
                         HStack {
@@ -56,13 +60,14 @@ struct signin: View {
                                 isChecked.toggle()
                             }, label: {
                                 Image(systemName: isChecked ? "checkmark.square" : "square")
-                                    .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                                    .foregroundColor(Color(hue: 0.639, saturation: 0.969, brightness: 0.303))
                                 
                             })
                             Text("Would you like to receive notifications?")
                                 .fontWeight(.semibold)
                         }
                         .padding(/*@START_MENU_TOKEN@*/.bottom, 245.0/*@END_MENU_TOKEN@*/)
+                        .padding(.top,10)
                         .ignoresSafeArea()
                         .toolbar {
                             ToolbarItemGroup(placement: .status) {

@@ -14,10 +14,14 @@ struct QuotePage: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("\"Success isn’t always about greatness. It’s about consistency. Consistent hard work leads to success. Greatness will come.\" \n\n -Dwayne Johnson")
+                .font(.title2)
+                .frame(width: 225)
+                .lineLimit(nil)
                 .padding(20)
-                .background(Color(red: 138, green: 17.0, blue: 255.0, opacity: 0.1))
+                .background(Color.orange.opacity(0.5))
                 .cornerRadius(15)
+                
                 
         }
     }

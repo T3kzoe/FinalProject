@@ -21,6 +21,7 @@ struct FunView: View {
             ZStack{
                 Image("2")
                     .resizable()
+                
                     .ignoresSafeArea()
                 VStack(spacing: 85.0) {
                     Text("I'm feeling...")
@@ -31,25 +32,35 @@ struct FunView: View {
                     VStack(spacing: 25.0) {
                         NavigationLink(destination: ContentView()) {
                             Text("Sad")
+                                
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
+                                .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                                .padding(10)
+                                .background(Color.white.opacity(0.5))
+                                .cornerRadius(15)
                         }
                         NavigationLink(destination: ContentView()) {
                             Text("Mad")
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
+                                .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                                .padding(10)
+                                .background(Color.white.opacity(0.5))
+                                .cornerRadius(15)
                         }
                         NavigationLink(destination: ContentView()) {
                             Text("Happy")
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
+                                .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                                .padding(10)
+                                .background(Color.white.opacity(0.6))
+                                .cornerRadius(15)
                         }
                     }
                     Text("I've been having fun for:")
-                        .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                        .foregroundColor(Color(hue: 0.191, saturation: 0.119, brightness: 0.949))
                         .shadow(radius: 3)
                         .font(.title)
                         .fontWeight(.semibold)
@@ -100,7 +111,7 @@ struct FunView: View {
                             NavigationLink(destination: ContentView()) {
                                 Text("Home")
                                     .font(.title)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.semibold)
                                     .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
                                     .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
                                     .background(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
@@ -109,7 +120,7 @@ struct FunView: View {
                             NavigationLink(destination: RestView()) {
                                 Text("Rest")
                                     .font(.title)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.semibold)
                                     .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
                                     .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
                                     .background(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
@@ -118,7 +129,7 @@ struct FunView: View {
                             NavigationLink(destination: iAmFeeling()) {
                                 Text("Work")
                                     .font(.title)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.semibold)
                                     .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
                                     .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
                                     .background(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
