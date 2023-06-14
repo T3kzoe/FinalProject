@@ -1,5 +1,5 @@
 //
-//  iAmFeeling.swift
+//  RestView.swift
 //  FinalProject
 //
 //  Created by Letícia Nhaúle on 6/13/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct iAmFeeling: View {
+struct RestView: View {
     
     @State var hours: Int = 0
     @State var minutes: Int = 0
@@ -19,7 +19,7 @@ struct iAmFeeling: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                Image("3")
+                Image("4")
                     .resizable()
                     .ignoresSafeArea()
                 VStack(spacing: 85.0) {
@@ -48,7 +48,7 @@ struct iAmFeeling: View {
                                 .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
                         }
                     }
-                    Text("I've been working for:")
+                    Text("I've been resting for:")
                         .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
                         .shadow(radius: 3)
                         .font(.title)
@@ -106,8 +106,8 @@ struct iAmFeeling: View {
                                     .background(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
                                     .cornerRadius(15)
                             }
-                            NavigationLink(destination: RestView()) {
-                                Text("Rest")
+                            NavigationLink(destination: iAmFeeling()) {
+                                Text("Work")
                                     .font(.title)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
@@ -158,8 +158,9 @@ struct iAmFeeling: View {
         
 }
 
-struct iAmFeeling_Previews: PreviewProvider {
+struct RestView_Previews: PreviewProvider {
     static var previews: some View {
-        iAmFeeling()
+        RestView()
     }
 }
+

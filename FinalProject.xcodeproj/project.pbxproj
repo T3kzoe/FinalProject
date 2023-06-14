@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03C8AB562A3843A400B45FDA /* signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C8AB552A3843A400B45FDA /* signin.swift */; };
 		09A779AF2A382E8A006D660D /* iAmFeeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A779AE2A382E8A006D660D /* iAmFeeling.swift */; };
+		09A779EE2A395E00006D660D /* RestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A779ED2A395E00006D660D /* RestView.swift */; };
+		09A779F02A395FCF006D660D /* FunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A779EF2A395FCF006D660D /* FunView.swift */; };
 		BDE6569F2A37758100CE8377 /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6569E2A37758100CE8377 /* FinalProjectApp.swift */; };
 		BDE656A12A37758100CE8377 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE656A02A37758100CE8377 /* ContentView.swift */; };
 		BDE656A32A37758200CE8377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE656A22A37758200CE8377 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		03C8AB552A3843A400B45FDA /* signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signin.swift; sourceTree = "<group>"; };
 		09A779AE2A382E8A006D660D /* iAmFeeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAmFeeling.swift; sourceTree = "<group>"; };
+		09A779ED2A395E00006D660D /* RestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestView.swift; sourceTree = "<group>"; };
+		09A779EF2A395FCF006D660D /* FunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunView.swift; sourceTree = "<group>"; };
 		BDE6569B2A37758100CE8377 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE6569E2A37758100CE8377 /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
 		BDE656A02A37758100CE8377 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				03C8AB552A3843A400B45FDA /* signin.swift */,
 				BDE656A02A37758100CE8377 /* ContentView.swift */,
 				09A779AE2A382E8A006D660D /* iAmFeeling.swift */,
+				09A779EF2A395FCF006D660D /* FunView.swift */,
+				09A779ED2A395E00006D660D /* RestView.swift */,
 				BDE656A22A37758200CE8377 /* Assets.xcassets */,
 				BDE656A42A37758200CE8377 /* Preview Content */,
 			);
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A779F02A395FCF006D660D /* FunView.swift in Sources */,
 				BDE656A12A37758100CE8377 /* ContentView.swift in Sources */,
 				BDE6569F2A37758100CE8377 /* FinalProjectApp.swift in Sources */,
+				09A779EE2A395E00006D660D /* RestView.swift in Sources */,
 				09A779AF2A382E8A006D660D /* iAmFeeling.swift in Sources */,
 				03C8AB562A3843A400B45FDA /* signin.swift in Sources */,
 			);
