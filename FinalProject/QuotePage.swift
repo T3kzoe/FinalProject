@@ -22,10 +22,20 @@ struct QuotePage: View {
                   "There is no development physically or intellectually without effort, and effort means work.\"-Calvin Coolidge",
                   "Successful people are not gifted; they just work hard, then succeed on purpose. \"-G.K. Neilson"
 ]
+    var images = [2,3,4,5,6]
     func pickQuote() -> String {
         let random = Int.random(in:0..<5)
         let quote = quotes[random]
       return quote
+        
+        func pickImage() -> Int {
+            let random = Int.random(in:0..<5)
+            let image = images[random]
+            return image
+        }
+        
+        
+        
     }
     var body: some View {
         ZStack {
