@@ -21,6 +21,7 @@ struct RestView: View {
             ZStack{
                 Image("4")
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
                 VStack(spacing: 85.0) {
                     Text("I'm feeling...")
@@ -29,7 +30,7 @@ struct RestView: View {
                         .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
                         .shadow(radius: 3)
                     VStack(spacing: 25.0) {
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: RestPage()) {
                             Text("Sad")
                                 .font(.title)
                                 .fontWeight(.bold)
@@ -37,7 +38,7 @@ struct RestView: View {
                                 .background(Color.white.opacity(0.5))
                                 .cornerRadius(15)
                         }
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: RestPage()) {
                             Text("Mad")
                                 .font(.title)
                                 .fontWeight(.bold)
@@ -45,7 +46,7 @@ struct RestView: View {
                                 .background(Color.white.opacity(0.5))
                                 .cornerRadius(15)
                         }
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: RestPage()) {
                             Text("Happy")
                                 .font(.title)
                                 .fontWeight(.bold)
@@ -106,15 +107,7 @@ struct RestView: View {
                     }
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {
-                            NavigationLink(destination: ContentView()) {
-                                Text("Home")
-                                    .font(.title)
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
-                                    .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
-                                    .background(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
-                                    .cornerRadius(15)
-                            }
+                           
                             NavigationLink(destination: iAmFeeling()) {
                                 Text("Work")
                                     .font(.title)

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03795B582A397E9900AF2147 /* QuotePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03795B572A397E9900AF2147 /* QuotePage.swift */; };
+		03795B5E2A3A4B4800AF2147 /* FunPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03795B5D2A3A4B4800AF2147 /* FunPage.swift */; };
+		03795B602A3A4E2F00AF2147 /* RestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03795B5F2A3A4E2F00AF2147 /* RestPage.swift */; };
 		03C8AB562A3843A400B45FDA /* signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C8AB552A3843A400B45FDA /* signin.swift */; };
 		09A779AF2A382E8A006D660D /* iAmFeeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A779AE2A382E8A006D660D /* iAmFeeling.swift */; };
 		09A779EE2A395E00006D660D /* RestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A779ED2A395E00006D660D /* RestView.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		03795B572A397E9900AF2147 /* QuotePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotePage.swift; sourceTree = "<group>"; };
+		03795B5D2A3A4B4800AF2147 /* FunPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunPage.swift; sourceTree = "<group>"; };
+		03795B5F2A3A4E2F00AF2147 /* RestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPage.swift; sourceTree = "<group>"; };
 		03C8AB552A3843A400B45FDA /* signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signin.swift; sourceTree = "<group>"; };
 		09A779AE2A382E8A006D660D /* iAmFeeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAmFeeling.swift; sourceTree = "<group>"; };
 		09A779ED2A395E00006D660D /* RestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestView.swift; sourceTree = "<group>"; };
@@ -62,9 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				BDE6569E2A37758100CE8377 /* FinalProjectApp.swift */,
+				03795B5D2A3A4B4800AF2147 /* FunPage.swift */,
 				03C8AB552A3843A400B45FDA /* signin.swift */,
 				BDE656A02A37758100CE8377 /* ContentView.swift */,
 				09A779AE2A382E8A006D660D /* iAmFeeling.swift */,
+				03795B5F2A3A4E2F00AF2147 /* RestPage.swift */,
 				09A779EF2A395FCF006D660D /* FunView.swift */,
 				09A779ED2A395E00006D660D /* RestView.swift */,
 				03795B572A397E9900AF2147 /* QuotePage.swift */,
@@ -158,7 +164,9 @@
 				BDE6569F2A37758100CE8377 /* FinalProjectApp.swift in Sources */,
 				09A779EE2A395E00006D660D /* RestView.swift in Sources */,
 				09A779AF2A382E8A006D660D /* iAmFeeling.swift in Sources */,
+				03795B5E2A3A4B4800AF2147 /* FunPage.swift in Sources */,
 				03C8AB562A3843A400B45FDA /* signin.swift in Sources */,
+				03795B602A3A4E2F00AF2147 /* RestPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

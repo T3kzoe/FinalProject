@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding var name: String
     var body: some View {
         NavigationStack{
           ZStack{
@@ -15,6 +16,11 @@ struct ContentView: View {
               .resizable()
               .ignoresSafeArea()
             VStack(spacing: 85.0) {
+                Text("Welcome, \(name)!")
+                    .font(.custom("Caveat-VariableFont_wght", size: 45))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                    .shadow(radius: 3)
               Text("I'm in my...")
                 .font(.custom("Caveat-VariableFont_wght", size: 45))
                 .fontWeight(.bold)
@@ -28,7 +34,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    .background(Color.white.opacity(1))
+                    .background(Color.white.opacity(0.9))
                     .cornerRadius(15)
                 }
                 NavigationLink(destination: RestView()) {
@@ -37,7 +43,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    .background(Color.white.opacity(1))
+                    .background(Color.white.opacity(0.9))
                     .cornerRadius(15)
                 }
                 NavigationLink(destination: iAmFeeling()) {
@@ -46,8 +52,9 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    .background(Color.white.opacity(1))
+                    .background(Color.white.opacity(0.9))
                     .cornerRadius(15)
+                    
                 }
               }
             }
@@ -68,6 +75,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(name: .constant(""))
     }
 }

@@ -57,7 +57,7 @@ struct iAmFeeling: View {
                         }
                     }
                     Text("I've been working for:")
-                        .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                        .foregroundColor(Color(hue: 0.127, saturation: 0.04, brightness: 0.974))
                         .shadow(radius: 3)
                         .font(.title)
                         .fontWeight(.semibold)
@@ -105,15 +105,7 @@ struct iAmFeeling: View {
                     }
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {
-                            NavigationLink(destination: ContentView()) {
-                                Text("Home")
-                                    .font(.title)
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
-                                    .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
-                                    .background(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
-                                    .cornerRadius(15)
-                            }
+                            
                             NavigationLink(destination: RestView()) {
                                 Text("Rest")
                                     .font(.title)

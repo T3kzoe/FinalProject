@@ -21,7 +21,8 @@ struct FunView: View {
             ZStack{
                 Image("2")
                     .resizable()
-                
+                    .aspectRatio(contentMode: .fill)
+
                     .ignoresSafeArea()
                 VStack(spacing: 85.0) {
                     Text("I'm feeling...")
@@ -30,32 +31,32 @@ struct FunView: View {
                         .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
                         .shadow(radius: 3)
                     VStack(spacing: 25.0) {
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: FunPage()) {
                             Text("Sad")
                                 
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
                                 .padding(10)
-                                .background(Color.white.opacity(0.5))
+                                .background(Color.white.opacity(0.7))
                                 .cornerRadius(15)
                         }
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: FunPage()) {
                             Text("Mad")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
                                 .padding(10)
-                                .background(Color.white.opacity(0.5))
+                                .background(Color.white.opacity(0.7))
                                 .cornerRadius(15)
                         }
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: FunPage()) {
                             Text("Happy")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
                                 .padding(10)
-                                .background(Color.white.opacity(0.6))
+                                .background(Color.white.opacity(0.7))
                                 .cornerRadius(15)
                         }
                     }
@@ -108,15 +109,7 @@ struct FunView: View {
                     }
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {
-                            NavigationLink(destination: ContentView()) {
-                                Text("Home")
-                                    .font(.title)
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
-                                    .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
-                                    .background(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
-                                    .cornerRadius(15)
-                            }
+                            
                             NavigationLink(destination: RestView()) {
                                 Text("Rest")
                                     .font(.title)

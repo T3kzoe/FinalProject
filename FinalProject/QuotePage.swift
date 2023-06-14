@@ -22,13 +22,14 @@ struct QuotePage: View {
                   "There is no development physically or intellectually without effort, and effort means work.\"-Calvin Coolidge",
                   "Successful people are not gifted; they just work hard, then succeed on purpose. \"-G.K. Neilson"
 ]
-    var images = [2,3,4,5,6]
+    var images = ["work1", "work2","work3","work4","work5","work6","work7","work8","work9","work10","work11","work12","work13","work14","work15",]
     func pickQuote() -> String {
         let random = Int.random(in:0..<5)
         let quote = quotes[random]
-      return quote
-        
-        func pickImage() -> Int {
+        return quote
+    }
+    
+        func pickImage() -> String {
             let random = Int.random(in:0..<5)
             let image = images[random]
             return image
@@ -36,10 +37,11 @@ struct QuotePage: View {
         
         
         
-    }
+    
     var body: some View {
         ZStack {
-            Image("meadow")
+            let randomImage = pickImage()
+            Image(randomImage)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
@@ -49,7 +51,7 @@ struct QuotePage: View {
                 .frame(width: 225)
                 .lineLimit(nil)
                 .padding(20)
-                .background(Color.orange.opacity(0.5))
+                .background(Color(hue: 0.101, saturation: 0.54, brightness: 0.979).opacity(0.8))
                 .cornerRadius(15)
                 
                 

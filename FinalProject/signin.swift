@@ -17,6 +17,7 @@ struct signin: View {
             ZStack {
                 Image("landscape1")
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
                 VStack{
                     VStack{
@@ -38,7 +39,8 @@ struct signin: View {
                             .shadow(radius: /*@START_MENU_TOKEN@*/3/*@END_MENU_TOKEN@*/)
                         
                     }
-                    .padding(.top, 160.0)
+                    .padding(.top, 140.0)
+                    .padding(.bottom,30)
                     
                     Spacer()
                     
@@ -71,7 +73,7 @@ struct signin: View {
                         .ignoresSafeArea()
                         .toolbar {
                             ToolbarItemGroup(placement: .status) {
-                                NavigationLink(destination: ContentView()) {
+                                NavigationLink(destination: ContentView(name:$name)) {
                                     Text("Next >>")
                                         .font(.title)
                                         .fontWeight(.bold)
