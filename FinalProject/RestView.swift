@@ -73,7 +73,8 @@ struct RestView: View {
                                     Image(systemName: "backward.end.alt")
                                         .padding(.all, 6.0)
                                         .imageScale(/*@START_MENU_TOKEN@*/.large/*@END_MENU_TOKEN@*/)
-                                        .foregroundColor(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
+                                        .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                                        .shadow(radius: 3)
                                 }
                                 .padding(.all)
                                 Button(action:{
@@ -84,7 +85,8 @@ struct RestView: View {
                                         .padding(.all, 6.0)
                                         .imageScale(/*@START_MENU_TOKEN@*/.large/*@END_MENU_TOKEN@*/)
                                 
-                                        .foregroundColor(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
+                                        .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                                        .shadow(radius: 3)
                                 }
                                 .padding(.all)
                             }
@@ -94,7 +96,8 @@ struct RestView: View {
                                 self.stopTimer()
                             }){
                                 Image(systemName: "stop.fill")
-                                    .foregroundColor(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
+                                    .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
+                                    .shadow(radius: 3)
                                     .imageScale(/*@START_MENU_TOKEN@*/.large/*@END_MENU_TOKEN@*/)
                             }
                             .padding(.all)
