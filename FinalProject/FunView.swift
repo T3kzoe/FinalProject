@@ -31,7 +31,7 @@ struct FunView: View {
                     .ignoresSafeArea()
                 VStack(spacing: 60.0) {
                     Text("I'm feeling...")
-                        .font(.custom("Caveat-VariableFont_wght", size: 45))
+                        .font(.custom("Outfit", size: 45))
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.947, saturation: 0.969, brightness: 0.303))
                         .shadow(radius: 3)

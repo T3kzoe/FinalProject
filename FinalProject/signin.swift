@@ -29,7 +29,7 @@ struct signin: View {
                             .shadow(radius: 3)
                         Text("Lifetastic")
                             .rotationEffect(.degrees(spin ? 360: 0))
-                            .font(.custom("Caveat-VariableFont_wght", size: 70))
+                            .font(.custom("Courgette-Regular", size: 70))
                             .fontWeight(.heavy)
                             .foregroundColor(Color.black)
                             .onAppear() {
