@@ -70,7 +70,9 @@ struct iAmFeeling: View {
                         if timerIsPaused {
                             HStack {
                                 Button(action:{
+                                    self.restartTimer()
                                     print("RESTART")
+                                    
                                 }){
                                     Image(systemName: "backward.end.alt")
                                         .padding(.all, 6.0)
@@ -85,7 +87,7 @@ struct iAmFeeling: View {
                                     Image(systemName: "play.fill")
                                         .padding(.all, 6.0)
                                         .imageScale(/*@START_MENU_TOKEN@*/.large/*@END_MENU_TOKEN@*/)
-                                
+                                    
                                         .foregroundColor(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
                                 }
                                 .padding(.all)
@@ -101,7 +103,7 @@ struct iAmFeeling: View {
                             }
                             .padding(.all)
                         }
-                           
+                        
                     }
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {
@@ -123,7 +125,7 @@ struct iAmFeeling: View {
                                     .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
                                     .background(Color(hue: 0.552, saturation: 0.14, brightness: 0.938))
                                     .cornerRadius(15)
-                                    
+                                
                             }
                             
                         }
@@ -131,31 +133,36 @@ struct iAmFeeling: View {
                 }
             }
         }
-        }
-                
-                func startTimer() {
-                    timerIsPaused = false
-                    timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTimer in
-                        if self.seconds == 59 {
-                            self.seconds = 0
-                            if self.minutes == 59 {
-                                self.minutes = 0
-                                self.hours = self.hours + 1
-                            } else {
-                                self.minutes = self.minutes + 1
-                            }
-                        } else {
-                            self.seconds = self.seconds + 1
-                        }
-                    }
+    }
+    
+    func startTimer() {
+        timerIsPaused = false
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTimer in
+            if self.seconds == 59 {
+                self.seconds = 0
+                if self.minutes == 59 {
+                    self.minutes = 0
+                    self.hours = self.hours + 1
+                } else {
+                    self.minutes = self.minutes + 1
                 }
+            } else {
+                self.seconds = self.seconds + 1
+            }
+        }
+    }
     
     func stopTimer(){
         timerIsPaused = true
         timer?.invalidate()
         timer = nil
     }
-        
+    
+    func restartTimer(){
+        self.hours = 0
+        self.minutes = 0
+        self.seconds = 0
+    }
 }
 
 struct iAmFeeling_Previews: PreviewProvider {

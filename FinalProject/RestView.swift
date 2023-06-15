@@ -69,7 +69,9 @@ struct RestView: View {
                         if timerIsPaused {
                             HStack {
                                 Button(action:{
+                                    self.restartTimer()
                                     print("RESTART")
+                                    
                                 }){
                                     Image(systemName: "backward.end.alt")
                                         .padding(.all, 6.0)
@@ -156,6 +158,12 @@ struct RestView: View {
         timerIsPaused = true
         timer?.invalidate()
         timer = nil
+    }
+    
+    func restartTimer(){
+        self.hours = 0
+        self.minutes = 0
+        self.seconds = 0
     }
         
 }
