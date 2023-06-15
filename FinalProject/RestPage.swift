@@ -62,7 +62,7 @@ struct RestPage: View {
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
             let randomQuote = pickQuote()
-                  Text("\"\(randomQuote)")
+                  Text("\(randomQuote)")
                 .font(.title2)
                 .frame(width: 225)
                 .lineLimit(nil)
