@@ -44,7 +44,7 @@ struct signin: View {
                     
                     Spacer()
                     
-                    VStack{
+                    VStack(spacing:20){
                         TextField("What's your name?", text: $name)
                             .font(.title)
                             
@@ -55,9 +55,19 @@ struct signin: View {
                                 RoundedRectangle(cornerRadius: 15)
                                     .stroke(Color(hue: 0.639, saturation: 0.969, brightness: 0.303), lineWidth: 2).padding(.horizontal)
                             )
+                            .padding(/*@START_MENU_TOKEN@*/.horizontal, 19.0/*@END_MENU_TOKEN@*/)
                         
-                        
-                        HStack {
+                        Button("Manage notifications") {
+                            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                                if success {
+                                    print("All set!")
+                                } else if let error = error {
+                                    print(error.localizedDescription)
+                                }
+                            }
+                        }.padding(5).padding(.horizontal,10).foregroundColor(Color(hue: 0.633, saturation: 0.779, brightness: 0.727)).fontWeight(.semibold  ).background(Color.white.opacity(0.4))
+                            .cornerRadius(10)
+                       /* HStack {
                             Button(action: {
                                 isChecked.toggle()
                             }, label: {
@@ -67,9 +77,8 @@ struct signin: View {
                             })
                             Text("Would you like to receive notifications?")
                                 .fontWeight(.semibold)
-                        }
+                        } */
                         .padding(/*@START_MENU_TOKEN@*/.bottom, 245.0/*@END_MENU_TOKEN@*/)
-                        .padding(.top,10)
                         .ignoresSafeArea()
                         .toolbar {
                             ToolbarItemGroup(placement: .status) {

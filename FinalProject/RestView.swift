@@ -13,9 +13,14 @@ struct RestView: View {
     @State var minutes: Int = 0
     @State var seconds: Int = 0
     @State var timerIsPaused: Bool = true
-    
+    @State var isChecked = false
     @State var timer: Timer? = nil
-    
+    @State var quotes = ["Take a good break!", "You deserve this.","Invest in rest.", "Relax! Life is beautiful.", "Remember to rest!"]
+    func pickQuote() -> String {
+        let random = Int.random(in:0..<5)
+        let quote = quotes[random]
+        return quote
+    }
     var body: some View {
         NavigationStack{
             ZStack{
@@ -23,7 +28,7 @@ struct RestView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
-                VStack(spacing: 85.0) {
+                VStack(spacing: 60.0) {
                     Text("I'm feeling...")
                         .font(.custom("Caveat-VariableFont_wght", size: 45))
                         .fontWeight(.bold)
@@ -55,6 +60,32 @@ struct RestView: View {
                                 .cornerRadius(15)
                         }
                     }
+                    HStack {
+                        Image(systemName: isChecked ? "checkmark.square" : "square")
+                            .foregroundColor(Color(hue: 0.639, saturation: 0.969, brightness: 0.303))
+                        Button("Turn on notifications!") {
+                            isChecked.toggle()
+                            let content = UNMutableNotificationContent()
+                            content.title = "Lifetastic"
+                            content.subtitle = pickQuote()
+                            content.sound = UNNotificationSound.default
+
+                            // show this notification 60 seconds from now
+                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: isChecked)
+
+                            // choose a random identifier
+                            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+                            // add our notification request
+                            UNUserNotificationCenter.current().add(request)
+                        }.font(.title2)
+                            .fontWeight(.semibold
+                            )
+                            .foregroundColor(Color(hue: 0.663, saturation: 0.675, brightness: 0.52))
+                        
+                    }.padding(10)
+                        .background(Color.white.opacity(0.5))
+                        .cornerRadius(15)
                     Text("I've been resting for:")
                         .foregroundColor(Color(hue: 0.947, saturation: 0.538, brightness: 0.22))
                         .shadow(radius: 3)
