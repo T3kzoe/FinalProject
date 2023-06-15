@@ -28,7 +28,7 @@
 		09A779AE2A382E8A006D660D /* iAmFeeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAmFeeling.swift; sourceTree = "<group>"; };
 		09A779ED2A395E00006D660D /* RestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestView.swift; sourceTree = "<group>"; };
 		09A779EF2A395FCF006D660D /* FunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunView.swift; sourceTree = "<group>"; };
-		BDE6569B2A37758100CE8377 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE6569B2A37758100CE8377 /* LifeTastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE6569E2A37758100CE8377 /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
 		BDE656A02A37758100CE8377 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDE656A22A37758200CE8377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		BDE6569C2A37758100CE8377 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDE6569B2A37758100CE8377 /* FinalProject.app */,
+				BDE6569B2A37758100CE8377 /* LifeTastic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BDE6569A2A37758100CE8377 /* FinalProject */ = {
+		BDE6569A2A37758100CE8377 /* LifeTastic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDE656A92A37758200CE8377 /* Build configuration list for PBXNativeTarget "FinalProject" */;
+			buildConfigurationList = BDE656A92A37758200CE8377 /* Build configuration list for PBXNativeTarget "LifeTastic" */;
 			buildPhases = (
 				BDE656972A37758100CE8377 /* Sources */,
 				BDE656982A37758100CE8377 /* Frameworks */,
@@ -103,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = FinalProject;
+			name = LifeTastic;
 			productName = FinalProject;
-			productReference = BDE6569B2A37758100CE8377 /* FinalProject.app */;
+			productReference = BDE6569B2A37758100CE8377 /* LifeTastic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BDE656962A37758100CE8377 /* Build configuration list for PBXProject "FinalProject" */;
+			buildConfigurationList = BDE656962A37758100CE8377 /* Build configuration list for PBXProject "LifeTastic" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDE6569A2A37758100CE8377 /* FinalProject */,
+				BDE6569A2A37758100CE8377 /* LifeTastic */,
 			);
 		};
 /* End PBXProject section */
@@ -346,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BDE656962A37758100CE8377 /* Build configuration list for PBXProject "FinalProject" */ = {
+		BDE656962A37758100CE8377 /* Build configuration list for PBXProject "LifeTastic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDE656A72A37758200CE8377 /* Debug */,
@@ -355,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDE656A92A37758200CE8377 /* Build configuration list for PBXNativeTarget "FinalProject" */ = {
+		BDE656A92A37758200CE8377 /* Build configuration list for PBXNativeTarget "LifeTastic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDE656AA2A37758200CE8377 /* Debug */,
